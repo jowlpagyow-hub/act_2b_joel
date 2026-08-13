@@ -80,14 +80,14 @@ Connection conn;
 
     private void btn_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_loginActionPerformed
         // TODO add your handling code here:
-        String username = txt_user.getText();
+        String user = txt_user.getText();
         char[] pass = txt_pass.getPassword();
         String userpassword = String.valueOf(pass);
         
         try{
         String sqlquery = "Select * From Table1 WHERE user = ? and pass = ? ";
         pst = conn.prepareStatement(sqlquery);
-        pst.setString(1,username);
+        pst.setString(1,user);
         pst.setString(2, userpassword);
             rs = pst.executeQuery();
             

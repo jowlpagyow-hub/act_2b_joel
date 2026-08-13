@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 public class MsConnectAccess {
 public static Connection conn() {
         try {
-            String url = "jdbc:ucanaccess://”C://Users//CL2-PC//Documents//joelpaguiodatabase.accdb";
+            String url = "jdbc:ucanaccess://C://Users//CL2-PC//Documents//joelpaguiodatabase.accdb";
             Connection conn = DriverManager.getConnection(url);
             return conn;
         } catch (SQLException e) {
