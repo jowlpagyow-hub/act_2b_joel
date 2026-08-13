@@ -8,6 +8,10 @@ package com.mycompany.joelpaguioact2b;
  *
  * @author CL2-PC
  */
-public class rps {
+class input {
+
+    static int nextInt() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
