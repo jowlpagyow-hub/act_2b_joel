@@ -13,7 +13,7 @@ public class Joelpaguioact2b {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Hello World!");
-        System.out.println("JON!");
+        System.out.println("joel!");
         System.out.println("Enter a Number: ");
         int x = input.nextInt();
         System.out.println("Enter a Number: ");
