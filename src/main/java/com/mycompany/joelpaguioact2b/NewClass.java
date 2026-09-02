@@ -21,6 +21,9 @@ public class NewClass {
         System.out.println("2 = snack");
         System.out.println("Enter your choice: ");
         
+        
+        
+        
  
         
     }
