@@ -85,7 +85,7 @@ Connection conn;
         String userpassword = String.valueOf(pass);
         
         try{
-        String sqlquery = "Select * From Table1 WHERE user = ? and pass = ? ";
+        String sqlquery = "Select * From Table1 WHERE user_database = ? and pass_database = ? ";
         pst = conn.prepareStatement(sqlquery);
         pst.setString(1,user);
         pst.setString(2, userpassword);

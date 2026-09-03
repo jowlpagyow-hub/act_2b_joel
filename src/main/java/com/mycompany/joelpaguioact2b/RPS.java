@@ -14,6 +14,7 @@ import javax.swing.JOptionPane;
  * @author CL2-PC
  */
 public class RPS extends javax.swing.JFrame {
+    
         
 
     /**
@@ -24,19 +25,18 @@ public class RPS extends javax.swing.JFrame {
         
         jProgressBar1.setMinimum(0);
         jProgressBar1.setMaximum(100);
-        jProgressBar1.setValue(90); // Magiging 90% full na ito
-        // I-apply ang custom UI para lumabas ang kulay sa parehong Progress Bar
+        jProgressBar1.setValue(90); 
+        
         jProgressBar1.setUI(new javax.swing.plaf.basic.BasicProgressBarUI());
-        jProgressBar1.setBackground(new java.awt.Color(255, 102, 102)); // Red background
-        jProgressBar1.setForeground(new java.awt.Color(153, 153, 0));   // Olive green fill
+        jProgressBar1.setBackground(new java.awt.Color(255, 102, 102)); 
+        jProgressBar1.setForeground(new java.awt.Color(153, 153, 0));  
 
         jProgressBar2.setMinimum(0);
         jProgressBar2.setMaximum(100);
-        jProgressBar2.setValue(90); // Magiging 90% full na ito
-        // I-apply ang custom UI para lumabas ang kulay sa parehong Progress Bar
+        jProgressBar2.setValue(90); 
         jProgressBar2.setUI(new javax.swing.plaf.basic.BasicProgressBarUI());
-        jProgressBar2.setBackground(new java.awt.Color(255, 102, 102)); // Red background
-        jProgressBar2.setForeground(new java.awt.Color(153, 153, 0));   // Olive green fill
+        jProgressBar2.setBackground(new java.awt.Color(255, 102, 102)); 
+        jProgressBar2.setForeground(new java.awt.Color(153, 153, 0));   
     }
 
     /**
