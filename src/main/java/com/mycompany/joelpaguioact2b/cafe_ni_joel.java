@@ -122,6 +122,9 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jButton17 = new javax.swing.JButton();
         jPanel16 = new javax.swing.JPanel();
         jPanel20 = new javax.swing.JPanel();
+        jPanel48 = new javax.swing.JPanel();
+        jButton25 = new javax.swing.JButton();
+        jPanel47 = new javax.swing.JPanel();
         jPanel46 = new javax.swing.JPanel();
         jButton24 = new javax.swing.JButton();
 
@@ -130,7 +133,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel2.setBackground(new java.awt.Color(0, 204, 102));
 
         jLabel1.setFont(new java.awt.Font("Arial Black", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -154,7 +157,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
 
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel6.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel6.setBackground(new java.awt.Color(0, 204, 102));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setBackground(new java.awt.Color(204, 255, 204));
@@ -171,7 +174,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jTextField1.setForeground(new java.awt.Color(51, 255, 51));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(153, 255, 153));
+        jLabel2.setForeground(new java.awt.Color(0, 204, 102));
         jLabel2.setText("Nova");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -201,7 +204,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jPanel15.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jButton18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton18.setForeground(new java.awt.Color(153, 255, 153));
+        jButton18.setForeground(new java.awt.Color(0, 204, 102));
         jButton18.setText("Confirm Snacks");
         jButton18.setContentAreaFilled(false);
         jButton18.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -313,7 +316,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jTextField3.setForeground(new java.awt.Color(51, 255, 51));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(153, 255, 153));
+        jLabel6.setForeground(new java.awt.Color(0, 204, 102));
         jLabel6.setText("Piatos");
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
@@ -391,7 +394,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jTextField4.setForeground(new java.awt.Color(51, 255, 51));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(153, 255, 153));
+        jLabel7.setForeground(new java.awt.Color(0, 204, 102));
         jLabel7.setText("Patata");
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
@@ -490,7 +493,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jTextField5.setForeground(new java.awt.Color(51, 255, 51));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(153, 255, 153));
+        jLabel8.setForeground(new java.awt.Color(0, 204, 102));
         jLabel8.setText("<html><center>Mang<br>Juan</center></html>");
 
         javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
@@ -589,7 +592,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jTextField6.setForeground(new java.awt.Color(51, 255, 51));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(153, 255, 153));
+        jLabel9.setForeground(new java.awt.Color(0, 204, 102));
         jLabel9.setText("Matcha");
 
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
@@ -644,7 +647,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jTextField7.setForeground(new java.awt.Color(51, 255, 51));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(153, 255, 153));
+        jLabel10.setForeground(new java.awt.Color(0, 204, 102));
         jLabel10.setText("Latte");
 
         javax.swing.GroupLayout jPanel35Layout = new javax.swing.GroupLayout(jPanel35);
@@ -766,7 +769,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jTextField8.setForeground(new java.awt.Color(51, 255, 51));
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(153, 255, 153));
+        jLabel12.setForeground(new java.awt.Color(0, 204, 102));
         jLabel12.setText("Coke");
 
         javax.swing.GroupLayout jPanel38Layout = new javax.swing.GroupLayout(jPanel38);
@@ -863,7 +866,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jPanel30.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jButton19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton19.setForeground(new java.awt.Color(153, 255, 153));
+        jButton19.setForeground(new java.awt.Color(0, 204, 102));
         jButton19.setText("Confirm Drinks");
         jButton19.setContentAreaFilled(false);
         jButton19.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -975,7 +978,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jTextField9.setForeground(new java.awt.Color(51, 255, 51));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(153, 255, 153));
+        jLabel13.setForeground(new java.awt.Color(0, 204, 102));
         jLabel13.setText("Damo");
 
         javax.swing.GroupLayout jPanel42Layout = new javax.swing.GroupLayout(jPanel42);
@@ -1003,14 +1006,14 @@ public class cafe_ni_joel extends javax.swing.JFrame {
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 450, 480));
 
-        jPanel7.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel7.setBackground(new java.awt.Color(0, 204, 102));
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setBackground(new java.awt.Color(204, 255, 204));
+        jLabel5.setBackground(new java.awt.Color(0, 204, 102));
         jLabel5.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("     Receipt");
-        jPanel7.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 50));
+        jPanel7.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 240, 50));
 
         jPanel17.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1112,18 +1115,35 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 50, Short.MAX_VALUE)
+            .addGap(0, 190, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 680, 770, 50));
+        jPanel1.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 680, 770, 190));
 
         jPanel20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel48.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel48.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel48.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton25.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton25.setForeground(new java.awt.Color(0, 204, 102));
+        jButton25.setText("Again");
+        jButton25.setContentAreaFilled(false);
+        jButton25.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel48.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 70, 46));
+
+        jPanel20.add(jPanel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 50, 50));
+
+        jPanel1.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 590, 70, 70));
+
+        jPanel47.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel46.setBackground(new java.awt.Color(255, 255, 255));
         jPanel46.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jButton24.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton24.setForeground(new java.awt.Color(153, 255, 153));
+        jButton24.setForeground(new java.awt.Color(0, 204, 102));
         jButton24.setText("Confirm Purchase");
         jButton24.setContentAreaFilled(false);
         jButton24.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -1132,16 +1152,18 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jPanel46.setLayout(jPanel46Layout);
         jPanel46Layout.setHorizontalGroup(
             jPanel46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton24, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
+            .addGroup(jPanel46Layout.createSequentialGroup()
+                .addComponent(jButton24)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel46Layout.setVerticalGroup(
             jPanel46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton24, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+            .addComponent(jButton24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
         );
 
-        jPanel20.add(jPanel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 230, 50));
+        jPanel47.add(jPanel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 150, -1));
 
-        jPanel1.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 590, 250, 70));
+        jPanel1.add(jPanel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 590, 170, 70));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1153,7 +1175,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 741, Short.MAX_VALUE)
         );
 
         pack();
@@ -1204,6 +1226,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
@@ -1263,6 +1286,8 @@ public class cafe_ni_joel extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel44;
     private javax.swing.JPanel jPanel45;
     private javax.swing.JPanel jPanel46;
+    private javax.swing.JPanel jPanel47;
+    private javax.swing.JPanel jPanel48;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
