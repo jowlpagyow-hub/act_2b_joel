@@ -332,7 +332,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jPanel13" max="32767" attributes="0"/>
-                                  <Component id="jPanel49" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jPanel49" pref="38" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace pref="13" max="32767" attributes="0"/>
                           </Group>
@@ -500,7 +500,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jPanel14" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jPanel50" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jPanel50" alignment="0" pref="38" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace pref="13" max="32767" attributes="0"/>
                           </Group>
@@ -744,7 +744,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jPanel22" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jPanel52" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jPanel52" alignment="0" pref="38" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace pref="13" max="32767" attributes="0"/>
                           </Group>
@@ -910,7 +910,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jPanel21" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jPanel51" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jPanel51" alignment="0" pref="38" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace pref="13" max="32767" attributes="0"/>
                           </Group>
@@ -1272,7 +1272,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jPanel26" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jPanel56" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jPanel56" alignment="0" pref="38" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace pref="13" max="32767" attributes="0"/>
                           </Group>
@@ -1475,7 +1475,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jPanel24" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jPanel54" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jPanel54" alignment="0" pref="38" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace pref="13" max="32767" attributes="0"/>
                           </Group>
@@ -1637,7 +1637,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jPanel23" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jPanel53" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jPanel53" alignment="0" pref="38" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace pref="13" max="32767" attributes="0"/>
                           </Group>
@@ -1840,7 +1840,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jPanel25" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jPanel55" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jPanel55" alignment="0" pref="38" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace pref="13" max="32767" attributes="0"/>
                           </Group>
@@ -2137,6 +2137,7 @@
                       <Font name="Segoe UI" size="8" style="0"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;font face=&apos;monospaced&apos;&gt;****************************************&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;CASH&amp;nbsp;RECEIPT&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;br&gt;****************************************&lt;br&gt;Description&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Price&lt;br&gt;Lorem&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;1.1&lt;br&gt;Ipsum&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.2&lt;br&gt;Dolor&amp;nbsp;sit&amp;nbsp;amet&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;3.3&lt;br&gt;Consectetur&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;4.4&lt;br&gt;Adipiscing&amp;nbsp;elit&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;5.5&lt;br&gt;****************************************&lt;br&gt;Total&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;16.5&lt;br&gt;Cash&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;20.0&lt;br&gt;Change&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;3.5&lt;br&gt;****************************************&lt;br&gt;Bank&amp;nbsp;card&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;---&amp;nbsp;---&amp;nbsp;---&amp;nbsp;234&lt;br&gt;Approval&amp;nbsp;Code&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;#123456&lt;br&gt;****************************************&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;THANK&amp;nbsp;YOU!&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&amp;nbsp;|||||||||||||||||||||||||||||||||||||||&lt;/font&gt;&lt;/html&gt;"/>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -2156,7 +2157,7 @@
                           <Component id="jLabel3" min="-2" pref="30" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="txt_money" min="-2" pref="97" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="15" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>

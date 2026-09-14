@@ -43,6 +43,9 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         setPanelEnabled(pnl_7, false);
         setPanelEnabled(pnl_8, false);
         
+        setPanelEnabled(jPanel10, true);
+        setPanelEnabled(jPanel8, true);
+        
         
         
         
@@ -59,6 +62,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
             setPanelEnabled((java.awt.Container) component, isEnabled);
         }
     }
+    
     
     
 }
@@ -343,7 +347,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnl_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, 38, Short.MAX_VALUE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
         pnl_1Layout.setVerticalGroup(
@@ -428,7 +432,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnl_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, 38, Short.MAX_VALUE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
         pnl_2Layout.setVerticalGroup(
@@ -553,7 +557,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnl_4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel52, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel52, javax.swing.GroupLayout.PREFERRED_SIZE, 38, Short.MAX_VALUE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
         pnl_4Layout.setVerticalGroup(
@@ -641,7 +645,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnl_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, 38, Short.MAX_VALUE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
         pnl_3Layout.setVerticalGroup(
@@ -838,7 +842,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnl_8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel56, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel56, javax.swing.GroupLayout.PREFERRED_SIZE, 38, Short.MAX_VALUE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
         pnl_8Layout.setVerticalGroup(
@@ -943,7 +947,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnl_6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel54, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel54, javax.swing.GroupLayout.PREFERRED_SIZE, 38, Short.MAX_VALUE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
         pnl_6Layout.setVerticalGroup(
@@ -1028,7 +1032,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnl_5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel53, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel53, javax.swing.GroupLayout.PREFERRED_SIZE, 38, Short.MAX_VALUE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
         pnl_5Layout.setVerticalGroup(
@@ -1133,7 +1137,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnl_7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel55, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel55, javax.swing.GroupLayout.PREFERRED_SIZE, 38, Short.MAX_VALUE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
         pnl_7Layout.setVerticalGroup(
@@ -1238,6 +1242,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
 
         lbl_receipt.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         lbl_receipt.setText("<html><font face='monospaced'>****************************************<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CASH&nbsp;RECEIPT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>****************************************<br>Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price<br>Lorem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1<br>Ipsum&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2<br>Dolor&nbsp;sit&nbsp;amet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.3<br>Consectetur&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.4<br>Adipiscing&nbsp;elit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.5<br>****************************************<br>Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16.5<br>Cash&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20.0<br>Change&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5<br>****************************************<br>Bank&nbsp;card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;---&nbsp;---&nbsp;234<br>Approval&nbsp;Code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#123456<br>****************************************<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THANK&nbsp;YOU!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>&nbsp;|||||||||||||||||||||||||||||||||||||||</font></html>");
+        lbl_receipt.setToolTipText("");
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
@@ -1277,7 +1282,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txt_money, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1403,6 +1408,11 @@ public class cafe_ni_joel extends javax.swing.JFrame {
 
     private void btn_linkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_linkActionPerformed
         // TODO add your handling code here:
+        Paykaya secondForm = new Paykaya();
+        secondForm.setVisible(true);
+        money = parseOrDefault(txt_money.getText());
+        
+        
     }//GEN-LAST:event_btn_linkActionPerformed
 
     private void txt_piatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_piatosActionPerformed
@@ -1421,7 +1431,6 @@ public class cafe_ni_joel extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_piatos_upActionPerformed
 
     private void btn_csnacksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_csnacksActionPerformed
-
         try {
             piatos = parseOrDefault(txt_piatos.getText());
             nova = parseOrDefault(txt_piatos1.getText());
@@ -1435,18 +1444,22 @@ public class cafe_ni_joel extends javax.swing.JFrame {
                 return;
             }
 
-            javax.swing.JOptionPane.showMessageDialog(this, "Snacks confirmed! Subtotal: ₱" + String.format("%.2f", snacksTotal), "Success", javax.swing.JOptionPane.INFORMATION_MESSAGE);
-        } catch (Exception ex) {
-            javax.swing.JOptionPane.showMessageDialog(this, "An error occurred: " + ex.getMessage(), "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
-        }
+                javax.swing.JOptionPane.showMessageDialog(this, "Snacks confirmed! Subtotal: ₱" + String.format("%.2f", snacksTotal), "Success", javax.swing.JOptionPane.INFORMATION_MESSAGE);
+            } catch (Exception ex) {
+                javax.swing.JOptionPane.showMessageDialog(this, "An error occurred: " + ex.getMessage(), "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+            }
         
-        setPanelEnabled(pnl_1, rdo_piatos.isSelected());
+        setPanelEnabled(jPanel8, false);
+            
+                
+       
         
+        
+
     }//GEN-LAST:event_btn_csnacksActionPerformed
 
     private void btn_cdrinksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cdrinksActionPerformed
         try {
-            
             
             latte = parseOrDefault(txt_piatos4.getText());
             coke = parseOrDefault(txt_piatos5.getText());
@@ -1464,6 +1477,9 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         } catch (Exception ex) {
             javax.swing.JOptionPane.showMessageDialog(this, "An error occurred: " + ex.getMessage(), "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
         }
+        
+        setPanelEnabled(jPanel10, false);
+        
     }//GEN-LAST:event_btn_cdrinksActionPerformed
 
     private void rdo_piatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdo_piatosActionPerformed
@@ -1545,11 +1561,11 @@ public class cafe_ni_joel extends javax.swing.JFrame {
 
     private void btn_piatos_up5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_piatos_up5ActionPerformed
         // TODO add your handling code here:
-        nova = parseOrDefault(txt_piatos1.getText()) - 1;
-        txt_piatos1.setText(String.valueOf(nova));
+        matcha = parseOrDefault(txt_piatos5.getText()) - 1;
+        txt_piatos5.setText(String.valueOf(matcha));
         
-        if(nova <= 0){
-            txt_piatos1.setText(String.valueOf(1));
+        if(matcha <= 0){
+            txt_piatos5.setText(String.valueOf(1));
         }
     }//GEN-LAST:event_btn_piatos_up5ActionPerformed
 
@@ -1573,11 +1589,11 @@ public class cafe_ni_joel extends javax.swing.JFrame {
 
     private void btn_piatos_up7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_piatos_up7ActionPerformed
         // TODO add your handling code here:
-        nova = parseOrDefault(txt_piatos1.getText()) - 1;
-        txt_piatos1.setText(String.valueOf(nova));
+        damo = parseOrDefault(txt_piatos7.getText()) - 1;
+        txt_piatos7.setText(String.valueOf(damo));
         
-        if(nova <= 0){
-            txt_piatos1.setText(String.valueOf(1));
+        if(damo <= 0){
+            txt_piatos7.setText(String.valueOf(1));
         }
     }//GEN-LAST:event_btn_piatos_up7ActionPerformed
 
