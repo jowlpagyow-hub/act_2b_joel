@@ -3,14 +3,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.joelpaguioact2b;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author pagsc
  */
+
 public class cafe_ni_joel extends javax.swing.JFrame {
-    
+        
     public int money = 0;
+    public double change = 0.0;
+    public double computeboth = 0.0;
+    
     
     public int piatos = 0;
     public int nova = 0;
@@ -31,8 +35,45 @@ public class cafe_ni_joel extends javax.swing.JFrame {
     /**
      * Creates new form cafe_ni_joel
      */
+    public void updateReceipt() {
+    String receiptText = 
+        "<html><font face='monospaced'><pre>" +
+        "****************************************\n" +
+        "             PRODUCT PRICES             \n" +
+        "****************************************\n" +
+        "             SNACKS                     \n" +
+        "Piatos                        Pesos: 15\n" +
+        "Nova                          Pesos: 15\n" +
+        "Patata                        Pesos: 20\n" +
+        "Mang Juan                     Pesos: 10\n" +
+        "\n" +
+        "****************************************\n" +
+        "             DRINKS PRICES              \n" +
+        "latte                         Pesos: 50\n" +
+        "Coke                          Pesos: 30\n" +
+        "Matcha                        Pesos: 60\n" +
+        "Damo                          Pesos: 25\n" +
+        "****************************************\n" +
+        "             TRANSACTIONS               \n" +
+        "Your Money         Pesos:  " + money + "\n" +
+        "Total Product      Pesos:   "+ computeboth +"\n" +
+        "Change             Pesos:    "+ change +"\n" +
+        "****************************************\n" +
+        "              THANK YOU!              \n" +
+        "\n" +
+        " |||||||||||||||||||||||||||||||||||||||\n" +
+        "</pre></font></html>";
+    
+    //inaaupdate nya palagi yung lbl natin bro
+    lbl_receipt.setText(receiptText);
+}
+    
     public cafe_ni_joel() {
+        
         initComponents();
+        updateReceipt();
+        
+        
         setLocationRelativeTo(null);
         setPanelEnabled(pnl_1, false);
         setPanelEnabled(pnl_2, false);
@@ -45,6 +86,15 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         
         setPanelEnabled(jPanel10, true);
         setPanelEnabled(jPanel8, true);
+        
+        setPanelEnabled(pnl_1, false);
+        setPanelEnabled(pnl_2, false);
+        setPanelEnabled(pnl_3, false);
+        setPanelEnabled(pnl_4, false);
+        setPanelEnabled(pnl_5, false);
+        setPanelEnabled(pnl_6, false);
+        setPanelEnabled(pnl_7, false);
+        setPanelEnabled(pnl_8, false);
         
         
         
@@ -177,8 +227,8 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jPanel17 = new javax.swing.JPanel();
         lbl_receipt = new javax.swing.JLabel();
         jPanel18 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        txt_money = new javax.swing.JTextField();
+        lbl_money = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         btn_link = new javax.swing.JButton();
         jPanel16 = new javax.swing.JPanel();
@@ -1241,8 +1291,13 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jPanel17.setBackground(new java.awt.Color(255, 255, 255));
 
         lbl_receipt.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
-        lbl_receipt.setText("<html><font face='monospaced'>****************************************<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CASH&nbsp;RECEIPT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>****************************************<br>Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price<br>Lorem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1<br>Ipsum&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2<br>Dolor&nbsp;sit&nbsp;amet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.3<br>Consectetur&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.4<br>Adipiscing&nbsp;elit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.5<br>****************************************<br>Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16.5<br>Cash&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20.0<br>Change&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.5<br>****************************************<br>Bank&nbsp;card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;---&nbsp;---&nbsp;234<br>Approval&nbsp;Code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#123456<br>****************************************<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THANK&nbsp;YOU!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>&nbsp;|||||||||||||||||||||||||||||||||||||||</font></html>");
         lbl_receipt.setToolTipText("");
+        lbl_receipt.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_receipt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_receiptMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
@@ -1250,46 +1305,29 @@ public class cafe_ni_joel extends javax.swing.JFrame {
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel17Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lbl_receipt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lbl_receipt, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel17Layout.setVerticalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(lbl_receipt)
+                .addComponent(lbl_receipt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         jPanel18.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(153, 255, 153));
-        jLabel3.setText("₱");
+        lbl_money.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lbl_money.setForeground(new java.awt.Color(153, 255, 153));
+        lbl_money.setText("00.00");
+        jPanel18.add(lbl_money, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 90, -1));
 
-        txt_money.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        txt_money.setForeground(new java.awt.Color(153, 255, 153));
-        txt_money.setText("00.00");
-        txt_money.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        txt_money.addActionListener(this::txt_moneyActionPerformed);
-
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
-        jPanel18.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txt_money, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(txt_money, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(153, 255, 153));
+        jLabel14.setText("₱ ");
+        jPanel18.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 30, 50));
 
         jPanel9.setBackground(new java.awt.Color(255, 255, 255));
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1311,11 +1349,11 @@ public class cafe_ni_joel extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                        .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1356,6 +1394,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         btn_again.setText("Again");
         btn_again.setContentAreaFilled(false);
         btn_again.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_again.addActionListener(this::btn_againActionPerformed);
         jPanel48.add(btn_again, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 70, 46));
 
         jPanel20.add(jPanel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 50, 50));
@@ -1367,19 +1406,18 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         jPanel46.setBackground(new java.awt.Color(255, 255, 255));
         jPanel46.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        btn_confirm_purchase.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_confirm_purchase.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btn_confirm_purchase.setForeground(new java.awt.Color(0, 204, 102));
         btn_confirm_purchase.setText("Confirm Purchase");
         btn_confirm_purchase.setContentAreaFilled(false);
         btn_confirm_purchase.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_confirm_purchase.addActionListener(this::btn_confirm_purchaseActionPerformed);
 
         javax.swing.GroupLayout jPanel46Layout = new javax.swing.GroupLayout(jPanel46);
         jPanel46.setLayout(jPanel46Layout);
         jPanel46Layout.setHorizontalGroup(
             jPanel46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel46Layout.createSequentialGroup()
-                .addComponent(btn_confirm_purchase)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(btn_confirm_purchase, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
         );
         jPanel46Layout.setVerticalGroup(
             jPanel46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1408,9 +1446,13 @@ public class cafe_ni_joel extends javax.swing.JFrame {
 
     private void btn_linkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_linkActionPerformed
         // TODO add your handling code here:
-        Paykaya secondForm = new Paykaya();
+        Paykaya secondForm = new Paykaya(money, this);
         secondForm.setVisible(true);
-        money = parseOrDefault(txt_money.getText());
+        
+        
+        
+        
+        
         
         
     }//GEN-LAST:event_btn_linkActionPerformed
@@ -1438,6 +1480,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
             mangjuan = parseOrDefault(txt_piatos3.getText()); 
 
             snacksTotal = (piatos * 15.0) + (nova * 15.0) + (patata * 20.0) + (mangjuan * 10.0);
+            
 
             if (snacksTotal == 0) {
                 javax.swing.JOptionPane.showMessageDialog(this, "Please select at least one snack!", "Warning", javax.swing.JOptionPane.WARNING_MESSAGE);
@@ -1445,6 +1488,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
             }
 
                 javax.swing.JOptionPane.showMessageDialog(this, "Snacks confirmed! Subtotal: ₱" + String.format("%.2f", snacksTotal), "Success", javax.swing.JOptionPane.INFORMATION_MESSAGE);
+                btn_csnacks.setText("Confirmed Snack/s:  ₱"+ snacksTotal);
             } catch (Exception ex) {
                 javax.swing.JOptionPane.showMessageDialog(this, "An error occurred: " + ex.getMessage(), "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
             }
@@ -1474,6 +1518,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
             }
 
             javax.swing.JOptionPane.showMessageDialog(this, "Drinks confirmed! Subtotal: ₱" + String.format("%.2f", drinksTotal), "Success", javax.swing.JOptionPane.INFORMATION_MESSAGE);
+            btn_cdrinks.setText("Confirmed Drink/s:  ₱"+ drinksTotal);
         } catch (Exception ex) {
             javax.swing.JOptionPane.showMessageDialog(this, "An error occurred: " + ex.getMessage(), "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
         }
@@ -1494,10 +1539,6 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_rdo_piatosActionPerformed
-
-    private void txt_moneyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_moneyActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txt_moneyActionPerformed
 
     private void txt_piatos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_piatos1ActionPerformed
         // TODO add your handling code here:
@@ -1730,6 +1771,96 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         txt_piatos7.setText(String.valueOf(damo));
     }//GEN-LAST:event_btn_piatos_down7ActionPerformed
 
+    private void btn_confirm_purchaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_confirm_purchaseActionPerformed
+        // TODO add your handling code here:
+        
+        if(computeboth == 0){
+            
+        }
+        else{
+            setPanelEnabled(jPanel46, false);
+            btn_confirm_purchase.setText("transaction complete");
+
+            money = Integer.parseInt(lbl_money.getText());
+            System.out.println(money);
+
+            computeboth = snacksTotal + drinksTotal;
+            change = computeboth - money;
+            System.out.println(change);
+            
+            
+        }
+        
+        
+        
+        
+    }//GEN-LAST:event_btn_confirm_purchaseActionPerformed
+
+    private void lbl_receiptMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_receiptMouseClicked
+        // TODO add your handling code here:
+
+        updateReceipt();
+        JOptionPane.showMessageDialog(rootPane, lbl_receipt.getText(), "RECEIPT CLOSE UP", JOptionPane.INFORMATION_MESSAGE);
+        
+        
+        
+    }//GEN-LAST:event_lbl_receiptMouseClicked
+
+    private void btn_againActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_againActionPerformed
+
+        money = 0;
+        change = 0;
+        computeboth = 0.0;
+
+        piatos = 0;
+        nova = 0;
+        patata = 0;
+        mangjuan = 0;
+        snacksTotal = 0.0;
+
+        latte = 0;
+        coke = 0;
+        matcha = 0;
+        damo = 0;
+        drinksTotal = 0.0;
+
+        updateReceipt();
+
+        setPanelEnabled(jPanel47, true); 
+        setPanelEnabled(jPanel8, true); 
+        setPanelEnabled(jPanel10, true); 
+        
+        
+        rdo_piatos.setSelected(false);
+        jRadioButton1.setSelected(false);
+        jRadioButton3.setSelected(false);
+        jRadioButton4.setSelected(false);
+        jRadioButton5.setSelected(false);
+        jRadioButton6.setSelected(false);
+        jRadioButton7.setSelected(false);
+        jRadioButton8.setSelected(false);
+
+        btn_confirm_purchase.setText("Confirm Purchase");
+        txt_piatos.setText("");
+        txt_piatos1.setText("");
+        txt_piatos2.setText("");
+        txt_piatos3.setText("");
+        txt_piatos4.setText("");
+        txt_piatos5.setText("");
+        txt_piatos6.setText("");
+        txt_piatos7.setText("");
+        
+        setPanelEnabled(pnl_1, false);
+        setPanelEnabled(pnl_2, false);
+        setPanelEnabled(pnl_3, false);
+        setPanelEnabled(pnl_4, false);
+        setPanelEnabled(pnl_5, false);
+        setPanelEnabled(pnl_6, false);
+        setPanelEnabled(pnl_7, false);
+        setPanelEnabled(pnl_8, false);
+        
+    }//GEN-LAST:event_btn_againActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1784,7 +1915,7 @@ public class cafe_ni_joel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1840,7 +1971,8 @@ public class cafe_ni_joel extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton6;
     private javax.swing.JRadioButton jRadioButton7;
     private javax.swing.JRadioButton jRadioButton8;
-    private javax.swing.JLabel lbl_receipt;
+    public javax.swing.JLabel lbl_money;
+    public javax.swing.JLabel lbl_receipt;
     private javax.swing.JPanel pnl_1;
     private javax.swing.JPanel pnl_2;
     private javax.swing.JPanel pnl_3;
@@ -1850,7 +1982,6 @@ public class cafe_ni_joel extends javax.swing.JFrame {
     private javax.swing.JPanel pnl_7;
     private javax.swing.JPanel pnl_8;
     private javax.swing.JRadioButton rdo_piatos;
-    private javax.swing.JTextField txt_money;
     private javax.swing.JTextField txt_piatos;
     private javax.swing.JTextField txt_piatos1;
     private javax.swing.JTextField txt_piatos2;

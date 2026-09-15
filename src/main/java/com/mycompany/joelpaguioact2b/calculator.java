@@ -34,6 +34,12 @@ public class calculator extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        num1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                num1ActionPerformed(evt);
+            }
+        });
+
         result.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
@@ -102,6 +108,10 @@ public class calculator extends javax.swing.JFrame {
         int sum = number1 + number2;
         result.setText(""+sum);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void num1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_num1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_num1ActionPerformed
 
     /**
      * @param args the command line arguments

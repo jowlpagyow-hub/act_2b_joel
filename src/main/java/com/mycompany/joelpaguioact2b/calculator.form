@@ -83,6 +83,9 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JTextField" name="num1">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="num1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="num2">
         </Component>
