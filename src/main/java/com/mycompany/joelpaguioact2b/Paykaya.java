@@ -12,7 +12,7 @@ package com.mycompany.joelpaguioact2b;
 
 public class Paykaya extends javax.swing.JFrame {
     
-    public Paykaya(int money, cafe_ni_joel mainForm) {
+    public Paykaya(double money, cafe_ni_joel mainForm) {
         initComponents();
         setLocationRelativeTo(null);
         this.mainWindow = mainForm;
@@ -58,7 +58,7 @@ public class Paykaya extends javax.swing.JFrame {
         jLabel4.setBackground(javax.swing.UIManager.getDefaults().getColor("Actions.Blue"));
         jLabel4.setFont(new java.awt.Font("Arial Black", 1, 48)); // NOI18N
         jLabel4.setForeground(javax.swing.UIManager.getDefaults().getColor("Actions.Blue"));
-        jLabel4.setText("Paykaya");
+        jLabel4.setText("PayPalid");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -80,10 +80,10 @@ public class Paykaya extends javax.swing.JFrame {
         jLabel6.setBackground(new java.awt.Color(0, 0, 0));
         jLabel6.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jLabel6.setText("Money: ");
-        jPanel7.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 80, 50));
+        jPanel7.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 80, 50));
 
         txt_receive_money.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jPanel7.add(txt_receive_money, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 0, 270, 50));
+        jPanel7.add(txt_receive_money, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, 290, 50));
 
         jPanel9.setBackground(new java.awt.Color(255, 255, 255));
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -93,11 +93,11 @@ public class Paykaya extends javax.swing.JFrame {
 
         btn_link.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btn_link.setForeground(javax.swing.UIManager.getDefaults().getColor("Button.background"));
-        btn_link.setText("Insert Money");
+        btn_link.setText("INSERT MONEY");
         btn_link.setContentAreaFilled(false);
         btn_link.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_link.addActionListener(this::btn_linkActionPerformed);
-        jPanel8.add(btn_link, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 370, 50));
+        jPanel8.add(btn_link, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 60));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -105,10 +105,10 @@ public class Paykaya extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(32, Short.MAX_VALUE)
+                .addContainerGap(17, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 395, Short.MAX_VALUE))
+                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(21, 21, 21))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel3Layout.createSequentialGroup()
@@ -150,16 +150,16 @@ public class Paykaya extends javax.swing.JFrame {
 
     private void btn_linkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_linkActionPerformed
         // TODO add your handling code here:
-    String insertedAmount = txt_receive_money.getText();
-    
-    //make sure mo na yung lbl sa main ay public kupal
-    mainWindow.lbl_money.setText(insertedAmount);
-    
-    
-    //para ma sarado yung current window
-    
+        String insertedAmount = txt_receive_money.getText();
 
-    this.dispose();
+        //make sure mo na yung lbl sa main ay public kupal
+        mainWindow.lbl_money.setText(insertedAmount);
+
+
+        //para ma sarado yung current window
+
+
+        this.dispose();
     }//GEN-LAST:event_btn_linkActionPerformed
 
     /**

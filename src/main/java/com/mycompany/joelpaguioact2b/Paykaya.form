@@ -48,10 +48,10 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Component id="jPanel1" max="32767" attributes="0"/>
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="32" max="32767" attributes="0"/>
+                  <EmptySpace pref="17" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="jPanel8" max="32767" attributes="0"/>
-                      <Component id="jPanel7" pref="395" max="32767" attributes="0"/>
+                      <Component id="jPanel7" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               </Group>
@@ -120,7 +120,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="d6" green="9f" id="Actions.Blue" palette="3" red="38" type="palette"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Paykaya"/>
+                <Property name="text" type="java.lang.String" value="PayPalid"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -148,7 +148,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="30" y="0" width="80" height="50"/>
+                  <AbsoluteConstraints x="20" y="0" width="80" height="50"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -160,7 +160,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="122" y="0" width="270" height="50"/>
+                  <AbsoluteConstraints x="120" y="0" width="290" height="50"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -196,7 +196,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" id="Button.background" palette="3" red="ff" type="palette"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Insert Money"/>
+                <Property name="text" type="java.lang.String" value="INSERT MONEY"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                   <Color id="Hand Cursor"/>
@@ -207,7 +207,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="10" y="10" width="370" height="50"/>
+                  <AbsoluteConstraints x="0" y="0" width="410" height="60"/>
                 </Constraint>
               </Constraints>
             </Component>

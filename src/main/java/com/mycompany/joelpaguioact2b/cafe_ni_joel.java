@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 
 public class cafe_ni_joel extends javax.swing.JFrame {
         
-    public int money = 0;
+    public double money = 0.0;
     public double change = 0.0;
     public double computeboth = 0.0;
     
@@ -1774,21 +1774,36 @@ public class cafe_ni_joel extends javax.swing.JFrame {
     private void btn_confirm_purchaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_confirm_purchaseActionPerformed
         // TODO add your handling code here:
         
-        if(computeboth == 0){
-            
+        computeboth = snacksTotal + drinksTotal;
+    
+        if (computeboth == 0) {
+            javax.swing.JOptionPane.showMessageDialog(this, "Please select and confirm your snacks or drinks first!", "Warning", javax.swing.JOptionPane.WARNING_MESSAGE);
+            return;
         }
-        else{
+
+        try {
+            // Parse money safely as a double to avoid decimal crashes
+            money = (int) Double.parseDouble(lbl_money.getText().trim());
+
+            if (money < computeboth) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Insufficient money! Please link or add more funds.", "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+
+            change = money - computeboth;
+
             setPanelEnabled(jPanel46, false);
-            btn_confirm_purchase.setText("transaction complete");
+            btn_confirm_purchase.setText("Transaction Complete");
 
-            money = Integer.parseInt(lbl_money.getText());
-            System.out.println(money);
+            // Optionally update your receipt display here to show the final computed values
+            updateReceipt();
 
-            computeboth = snacksTotal + drinksTotal;
-            change = computeboth - money;
-            System.out.println(change);
-            
-            
+            javax.swing.JOptionPane.showMessageDialog(this, "Purchase successful! Change: ₱" + String.format("%.2f", change), "Success", javax.swing.JOptionPane.INFORMATION_MESSAGE);
+            lbl_money.setText(String.format("%.2f", change));
+
+
+        } catch (NumberFormatException ex) {
+            javax.swing.JOptionPane.showMessageDialog(this, "Invalid money format in label.", "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
         }
         
         
@@ -1858,6 +1873,11 @@ public class cafe_ni_joel extends javax.swing.JFrame {
         setPanelEnabled(pnl_6, false);
         setPanelEnabled(pnl_7, false);
         setPanelEnabled(pnl_8, false);
+        
+        
+        btn_csnacks.setText("Confirm Snacks");
+        btn_cdrinks.setText("Confirm Drinks");
+        lbl_money.setText(String.format("00.00"));
         
     }//GEN-LAST:event_btn_againActionPerformed
 
