@@ -105,12 +105,12 @@ public class cafe_ni_joel extends javax.swing.JFrame {
     //variable para sa pag disable sa panel
     
     private void setPanelEnabled(java.awt.Container panel, boolean isEnabled) {
-    panel.setEnabled(isEnabled);
-    for (java.awt.Component component : panel.getComponents()) {
-        component.setEnabled(isEnabled);
-        if (component instanceof java.awt.Container) {
-            setPanelEnabled((java.awt.Container) component, isEnabled);
-        }
+        panel.setEnabled(isEnabled);
+        for (java.awt.Component component : panel.getComponents()) {
+            component.setEnabled(isEnabled);
+            if (component instanceof java.awt.Container) {
+                setPanelEnabled((java.awt.Container) component, isEnabled);
+            }
     }
     
     
