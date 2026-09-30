@@ -50,6 +50,9 @@
   </Layout>
   <SubComponents>
     <Component class="javax.swing.JTextField" name="txt_user">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_userActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JPasswordField" name="txt_pass">
     </Component>

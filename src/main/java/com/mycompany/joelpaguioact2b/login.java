@@ -25,6 +25,14 @@ Connection conn;
     public login() {
         initComponents();
         conn = MsConnectAccess.conn();
+        
+        initComponents();
+        conn = MsConnectAccess.conn();
+        
+        // Safety check to notify if database connection failed on startup
+        if (conn == null) {
+            JOptionPane.showMessageDialog(null, "Database connection failed! Check your connection settings.");
+        }
 
 
     }
@@ -43,6 +51,12 @@ Connection conn;
         btn_login = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        txt_user.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_userActionPerformed(evt);
+            }
+        });
 
         btn_login.setText("login");
         btn_login.addActionListener(new java.awt.event.ActionListener() {
@@ -79,36 +93,53 @@ Connection conn;
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_loginActionPerformed
-        // TODO add your handling code here:
-        String user = txt_user.getText();
+        String user = txt_user.getText().trim();
         char[] pass = txt_pass.getPassword();
         String userpassword = String.valueOf(pass);
         
-        try{
-        String sqlquery = "Select * From Table1 WHERE user_database = ? and pass_database = ? ";
-        pst = conn.prepareStatement(sqlquery);
-        pst.setString(1,user);
-        pst.setString(2, userpassword);
-            rs = pst.executeQuery();
-            
-            if(!rs.next())
-            {
-            JOptionPane.showMessageDialog(null,"incorrect input either user or pass");
-            
-            }
-            else
-            {
-            JOptionPane.showMessageDialog(null,"login successfull");
-            }
-        }catch(SQLException e){
-            
-            JOptionPane.showMessageDialog(null, e);
+        // Basic validation for empty fields
+        if (user.isEmpty() || userpassword.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Please enter both username and password.");
+            return;
         }
         
-        
-              
+        if (conn == null) {
+            JOptionPane.showMessageDialog(null, "No database connection available.");
+            return;
+        }
 
+        String sqlquery = "SELECT * FROM Table1 WHERE user_database = ? AND pass_database = ?";
+        
+        try {
+            pst = conn.prepareStatement(sqlquery);
+            pst.setString(1, user);
+            pst.setString(2, userpassword);
+            rs = pst.executeQuery();
+            
+            if (!rs.next()) {
+                JOptionPane.showMessageDialog(null, "Incorrect input: either username or password is incorrect.");
+            } else {
+                JOptionPane.showMessageDialog(null, "Login successful!");
+                // TODO: Open your main dashboard frame here and close the login frame
+                // new MainDashboard().setVisible(true);
+                // this.dispose();
+            }
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Database Error: " + e.getMessage());
+        } finally {
+            // Clean up database resources to prevent leaks
+            try {
+                if (rs != null) rs.close();
+                if (pst != null) pst.close();
+            } catch (SQLException ex) {
+                // Log or handle cleanup error if necessary
+            }
+        }
     }//GEN-LAST:event_btn_loginActionPerformed
+
+    private void txt_userActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_userActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_userActionPerformed
 
     /**
      * @param args the command line arguments
