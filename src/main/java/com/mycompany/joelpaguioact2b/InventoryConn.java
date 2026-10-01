@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
 class InventoryConn {
      public static Connection conn() {
         try {
-            String url = "jdbc:ucanaccess://C://Users//pagsc//OneDrive//ドキュメント//Crud_database.accdb";
+            String url = "jdbc:ucanaccess://C://Users//CL2-PC//Documents//crud.accdb";
             Connection conn = DriverManager.getConnection(url);
             return conn;
         } catch (SQLException e) {
