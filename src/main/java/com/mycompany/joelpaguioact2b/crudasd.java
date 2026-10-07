@@ -35,7 +35,7 @@ public class crudasd extends javax.swing.JFrame {
 //    
 //    
     private void reading() {
-    String sql = "SELECT * FROM product";
+    String sql = "SELECT * FROM pcaccounts";
 
     try {
         pst = conn.prepareStatement(sql);
@@ -93,7 +93,7 @@ public class crudasd extends javax.swing.JFrame {
         return;
     }
 
-    String sql = "INSERT INTO product (pcnum, activity, time) VALUES (?, ?, ?)";
+    String sql = "INSERT INTO pcaccounts (pcnum, activity, time) VALUES (?, ?, ?)";
 
     try {
         pst = conn.prepareStatement(sql);
@@ -171,64 +171,61 @@ public class crudasd extends javax.swing.JFrame {
                 "Error deleting product: " + e.getMessage());
     }
 }
-    
     private void updating() {
     int selectedRow = display.getSelectedRow();
 
     if (selectedRow == -1) {
         JOptionPane.showMessageDialog(this,
-                "Please select a product to update.");
+                "Please select an account to update.");
         return;
     }
 
     String id = display.getValueAt(selectedRow, 0).toString();
-    String name = JOptionPane.showInputDialog(this,
-            "Enter new product name:",
+
+    String pcnum = JOptionPane.showInputDialog(this,
+            "Enter PC Number:",
             display.getValueAt(selectedRow, 1));
 
-    String qty = JOptionPane.showInputDialog(this,
-            "Enter new quantity:",
+    String activity = JOptionPane.showInputDialog(this,
+            "Enter Activity:",
             display.getValueAt(selectedRow, 2));
 
-    String price = JOptionPane.showInputDialog(this,
-            "Enter new price:",
+    String time = JOptionPane.showInputDialog(this,
+            "Enter Time:",
             display.getValueAt(selectedRow, 3));
 
-    if (name == null || qty == null || price == null) {
+    // Cancel if any input dialog was closed/cancelled
+    if (pcnum == null || activity == null || time == null) {
         return;
     }
 
-    String sql = "UPDATE product SET product_name = ?, qty = ?, price = ? WHERE ID = ?";
+    String sql = "UPDATE pcaccounts SET pcnum = ?, activity = ?, time = ? WHERE ID = ?";
 
     try {
         pst = conn.prepareStatement(sql);
 
-        pst.setString(1, name);
-        pst.setInt(2, Integer.parseInt(qty));
-        pst.setDouble(3, Double.parseDouble(price));
-        pst.setInt(4, Integer.parseInt(id));
+        // Setting all parameters as Strings
+        pst.setString(1, pcnum);
+        pst.setString(2, activity);
+        pst.setString(3, time);
+        pst.setString(4, id);
 
         int updated = pst.executeUpdate();
 
         if (updated > 0) {
             JOptionPane.showMessageDialog(this,
-                    "Product updated successfully!");
+                    "Account updated successfully!");
 
             reading();
         }
 
         pst.close();
 
-    } catch (NumberFormatException e) {
-        JOptionPane.showMessageDialog(this,
-                "QTY must be a whole number and Price must be a number.");
-
     } catch (SQLException e) {
         JOptionPane.showMessageDialog(this,
-                "Error updating product: " + e.getMessage());
+                "Error updating account: " + e.getMessage());
     }
 }
-   
 
     
     
@@ -259,7 +256,7 @@ public class crudasd extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Password", "PC #", "Activity", "Time"
+                "Unique #", "PC #", "Activity", "Time"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -281,7 +278,7 @@ public class crudasd extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Add Time");
+        jButton1.setText("Edit Account");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
