@@ -30,6 +30,8 @@ public class Crud extends javax.swing.JFrame {
     }
     
     
+    
+    
     // everytime na kinocall out mo sya rerefersh nya lahat sa jtable 
 //    
 //    
