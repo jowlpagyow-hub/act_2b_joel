@@ -32,7 +32,7 @@ public class Crud extends javax.swing.JFrame {
     
     
     
-    // everytime na kinocall out mo sya rerefersh nya lahat sa jtable 
+     // everytime na kinocall out mo sya rerefersh nya lahat sa jtable 
 //    
 //    
 //    
@@ -40,7 +40,7 @@ public class Crud extends javax.swing.JFrame {
 //    
 //    
     private void reading() {
-    String sql = "SELECT * FROM product";
+    String sql = "SELECT * FROM pcaccounts";
 
     try {
         pst = conn.prepareStatement(sql);
@@ -55,10 +55,10 @@ public class Crud extends javax.swing.JFrame {
         
         while (rs.next()) {
             model.addRow(new Object[]{
-                rs.getObject(2), //i wanna add a label + "PC "  
+                "00" + rs.getObject(1), 
+                "PC " + rs.getObject(2),  
                 rs.getObject(3),  
-                rs.getObject(4),  
-                rs.getObject(5)   
+                rs.getObject(4)    
             });
         }
 
@@ -71,19 +71,11 @@ public class Crud extends javax.swing.JFrame {
     }
 }
     
-    
-    
-    
-    
-    //Create ka ng produkto 
-    //    
-//    
-//    
-//    
-//    
-//    
+      
     private void creating() {
         
+        
+    
         
     String pc = JOptionPane.showInputDialog(
             this, "Enter PC number:");
@@ -91,11 +83,11 @@ public class Crud extends javax.swing.JFrame {
     if (pc == null || pc.trim().isEmpty()) {
         return;
     }
-        
-    String username = JOptionPane.showInputDialog(
-            this, "Enter Username:");
 
-    if (username == null || username.trim().isEmpty()) {
+    String activity = JOptionPane.showInputDialog(
+            this, "Enter Activity:");
+
+    if (activity == null || activity.trim().isEmpty()) {
         return;
     }
 
@@ -106,22 +98,14 @@ public class Crud extends javax.swing.JFrame {
         return;
     }
 
-    String password = JOptionPane.showInputDialog(
-            this, "Enter Password:");
-
-    if (password == null || password.trim().isEmpty()) {
-        return;
-    }
-
-    String sql = "INSERT INTO product (pc, username, time, password) VALUES (?, ?, ?, ?)";
+    String sql = "INSERT INTO pcaccounts (pcnum, activity, time) VALUES (?, ?, ?)";
 
     try {
         pst = conn.prepareStatement(sql);
-
-        pst.setString(2, pc);
-        pst.setString(3, username);
-        pst.setString(4, time);
-        pst.setString(5, password);
+        
+        pst.setString(1, pc);
+        pst.setString(2, activity);
+        pst.setString(3, time);
 
         int inserted = pst.executeUpdate();
 
@@ -135,23 +119,13 @@ public class Crud extends javax.swing.JFrame {
 
         pst.close();
 
-    } catch (NumberFormatException e) {
-        JOptionPane.showMessageDialog(this,
-                "QTY must be a whole number and Price must be a number.");
-
     } catch (SQLException e) {
         JOptionPane.showMessageDialog(this,
-                "Error adding product: " + e.getMessage());
+                "Error adding account: " + e.getMessage());
     }
 }
     
-     
-    //delete mo yung isang row
-    //    
-//    
-//    
-//    
-//    
+    
 //    
     private void deleting() {
     int selectedRow = display.getSelectedRow();
@@ -202,74 +176,63 @@ public class Crud extends javax.swing.JFrame {
                 "Error deleting product: " + e.getMessage());
     }
 }
-    
-    
-    
-    //Inaaupdate mo sila kapag sinelect mo yung jtable tas btn na update
-//    
-//    
-//    
-//    
-//    
-//    
-    
     private void updating() {
     int selectedRow = display.getSelectedRow();
 
     if (selectedRow == -1) {
         JOptionPane.showMessageDialog(this,
-                "Please select a product to update.");
+                "Please select an account to update.");
         return;
     }
 
     String id = display.getValueAt(selectedRow, 0).toString();
-    String name = JOptionPane.showInputDialog(this,
-            "Enter new product name:",
+
+    String pcnum = JOptionPane.showInputDialog(this,
+            "Enter PC Number:",
             display.getValueAt(selectedRow, 1));
 
-    String qty = JOptionPane.showInputDialog(this,
-            "Enter new quantity:",
+    String activity = JOptionPane.showInputDialog(this,
+            "Enter Activity:",
             display.getValueAt(selectedRow, 2));
 
-    String price = JOptionPane.showInputDialog(this,
-            "Enter new price:",
+    String time = JOptionPane.showInputDialog(this,
+            "Enter Time:",
             display.getValueAt(selectedRow, 3));
 
-    if (name == null || qty == null || price == null) {
+    // Cancel if any input dialog was closed/cancelled
+    if (pcnum == null || activity == null || time == null) {
         return;
     }
 
-    String sql = "UPDATE product SET product_name = ?, qty = ?, price = ? WHERE ID = ?";
+    String sql = "UPDATE pcaccounts SET pcnum = ?, activity = ?, time = ? WHERE ID = ?";
 
     try {
         pst = conn.prepareStatement(sql);
 
-        pst.setString(1, name);
-        pst.setInt(2, Integer.parseInt(qty));
-        pst.setDouble(3, Double.parseDouble(price));
-        pst.setInt(4, Integer.parseInt(id));
+        // Setting all parameters as Strings
+        pst.setString(1, pcnum);
+        pst.setString(2, activity);
+        pst.setString(3, time);
+        pst.setString(4, id);
 
         int updated = pst.executeUpdate();
 
         if (updated > 0) {
             JOptionPane.showMessageDialog(this,
-                    "Product updated successfully!");
+                    "Account updated successfully!");
 
             reading();
         }
 
         pst.close();
 
-    } catch (NumberFormatException e) {
-        JOptionPane.showMessageDialog(this,
-                "QTY must be a whole number and Price must be a number.");
-
     } catch (SQLException e) {
         JOptionPane.showMessageDialog(this,
-                "Error updating product: " + e.getMessage());
+                "Error updating account: " + e.getMessage());
     }
 }
-   
+
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
