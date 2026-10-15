@@ -172,7 +172,7 @@ public class Crud extends javax.swing.JFrame {
     }
 
     String activity = JOptionPane.showInputDialog(
-            this, "Enter Activity:");
+            this, "Enter Username:");
 
     if (activity == null || activity.trim().isEmpty()) {
         return;
@@ -219,7 +219,7 @@ public class Crud extends javax.swing.JFrame {
 
     if (selectedRow == -1) {
         JOptionPane.showMessageDialog(this,
-                "Please select a product to delete.");
+                "Please select a Pc to delete.");
         return;
     }
 
@@ -227,7 +227,7 @@ public class Crud extends javax.swing.JFrame {
 
     int confirm = JOptionPane.showConfirmDialog(
             this,
-            "Are you sure you want to delete this product?",
+            "Are you sure you want to TurnOFf this PC?",
             "Confirm Delete",
             JOptionPane.YES_NO_OPTION
     );
@@ -246,7 +246,7 @@ public class Crud extends javax.swing.JFrame {
 
         if (deleted > 0) {
             JOptionPane.showMessageDialog(this,
-                    "Product deleted successfully!");
+                    "Pc TurnedOff successfully!");
 
        
             reading();
@@ -260,7 +260,7 @@ public class Crud extends javax.swing.JFrame {
 
     } catch (SQLException e) {
         JOptionPane.showMessageDialog(this,
-                "Error deleting product: " + e.getMessage());
+                "Error TurnOff PC: " + e.getMessage());
     }
 }
     private void updating() {
@@ -268,7 +268,7 @@ public class Crud extends javax.swing.JFrame {
 
     if (selectedRow == -1) {
         JOptionPane.showMessageDialog(this,
-                "Please select an account to update.");
+                "Please select an PC to update.");
         return;
     }
 
@@ -279,7 +279,7 @@ public class Crud extends javax.swing.JFrame {
             display.getValueAt(selectedRow, 1));
 
     String activity = JOptionPane.showInputDialog(this,
-            "Enter Activity:",
+            "Enter Username:",
             display.getValueAt(selectedRow, 2));
 
     String time = JOptionPane.showInputDialog(this,
@@ -306,7 +306,7 @@ public class Crud extends javax.swing.JFrame {
 
         if (updated > 0) {
             JOptionPane.showMessageDialog(this,
-                    "Account updated successfully!");
+                    "Pc updated successfully!");
 
             reading();
         }
@@ -315,7 +315,7 @@ public class Crud extends javax.swing.JFrame {
 
     } catch (SQLException e) {
         JOptionPane.showMessageDialog(this,
-                "Error updating account: " + e.getMessage());
+                "Error updating Pc: " + e.getMessage());
     }
 }
 
@@ -372,7 +372,7 @@ public class Crud extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Unique #", "PC #", "Activity", "Time"
+                "Unique #", "PC #", "Name", "Time"
             }
         ) {
             boolean[] canEdit = new boolean [] {

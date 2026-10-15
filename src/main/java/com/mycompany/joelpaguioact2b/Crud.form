@@ -144,7 +144,7 @@
                   <Table columnCount="4" rowCount="4">
                     <Column editable="false" title="Unique #" type="java.lang.Object"/>
                     <Column editable="false" title="PC #" type="java.lang.Object"/>
-                    <Column editable="false" title="Activity" type="java.lang.Object"/>
+                    <Column editable="false" title="Name" type="java.lang.Object"/>
                     <Column editable="false" title="Time" type="java.lang.Object"/>
                   </Table>
                 </Property>
